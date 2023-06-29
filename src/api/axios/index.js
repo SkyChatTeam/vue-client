@@ -55,7 +55,7 @@ _axios.interceptors.response.use(
         //     resolve(axios(originalRequest))
         //   } else {
         //     // store.dispatch('logout')
-        //     // router.replace({name: 'Login'})
+        //     // router.replace({name: 'Login1'})
         //     return Promise.reject(new Error('로그인이 만료 되었습니다.1'))
         //   }
         // })

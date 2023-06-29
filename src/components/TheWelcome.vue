@@ -5,6 +5,7 @@ import ToolingIcon from './icons/IconTooling.vue'
 import EcosystemIcon from './icons/IconEcosystem.vue'
 import CommunityIcon from './icons/IconCommunity.vue'
 import SupportIcon from './icons/IconSupport.vue'
+import Router from '@/router'
 </script>
 
 <template>
@@ -20,6 +21,7 @@ import SupportIcon from './icons/IconSupport.vue'
   </WelcomeItem>
 
   <WelcomeItem>
+    <p @click="Router.push({name: 'Login'})">로그인</p>
     <template #icon>
       <ToolingIcon />
     </template>
