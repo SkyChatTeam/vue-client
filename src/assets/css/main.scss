@@ -1,0 +1,156 @@
+/*기본설정*/
+@font-face {
+  font-family: 'SUITE-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-shadow: none;
+}
+
+body {
+  margin: 0;
+  background: #fbfbfb;
+  font-family: 'SUITE-Regular', serif;
+}
+
+.mainlogo {
+  width: 180px;
+}
+
+button:disabled {
+  color: white;
+  pointer-events: none;
+  background-color: #EC4848 !important;
+  border-color: #EC4848;
+  opacity: 0.8;
+}
+
+/*변수*/
+$border-color: #cfcfcf;
+$main-color: #e44444;
+$maintext-color: #434343;
+$subtext-color: #8d8d8d;
+
+/*Main - 홈페이지 메인 화면*/
+.main_slide {
+  width: 100%;
+  height: 450px;
+  background: #e4e4e4;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.mainpg_wrap {
+  width: 1280px;
+
+  .main_comment_wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 100px 0;
+
+    .comment {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      h2 {
+        font: {
+          size: 25px;
+          weight: 600;
+        }
+        margin-bottom: 45px;
+      }
+
+      div {
+        width: 100%;
+        height: 250px;
+        border-radius: 18px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 450px;
+
+        }
+      }
+    }
+  }
+}
+
+
+/*TheMainHeader - 메인화면 헤더 개발자*/
+.mainheader {
+  background: white;
+  border-bottom: 2px solid $main-color;
+
+  .mainheader_wrap {
+    width: 1280px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+
+    .mainheader_left {
+      display: flex;
+      align-items: center;
+      margin: 0;
+    }
+
+    .mainheader_right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin: 0;
+
+      .search {
+        width: 300px;
+        padding-left: 20px;
+        margin-right: 20px;
+        border-radius: 100px;
+      }
+
+      .searchbtn {
+        position: absolute;
+        right: 213px;
+        width: 20px;
+        height: 20px;
+
+        &:hover {
+          cursor: pointer;
+          opacity: 0.5;
+        }
+      }
+
+      .login_text {
+        font: {
+          size: 16px;
+          weight: 600;
+        }
+        color: $maintext-color;
+        margin-right: 20px;
+      }
+
+      .joinbtn {
+        width: 120px;
+        height: 40px;
+        font: {
+          size: 16px;
+        }
+        border-radius: 5px;
+
+        &:hover {
+          font-weight: 600
+        }
+      }
+    }
+  }
+}
+
